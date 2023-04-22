@@ -1,0 +1,2 @@
+# DjangoTailwind
+Django and Tailwind
