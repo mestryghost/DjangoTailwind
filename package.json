@@ -1,4 +1,6 @@
-{
+{"scripts": {
+  "dev": "echo \"hello world\""
+},
   "devDependencies": {
     "tailwindcss": "^3.3.1"
   }
