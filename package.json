@@ -1,4 +1,5 @@
-{"scripts": {
+{
+  "scripts": {
   "dev": "echo \"hello world\""
 },
   "devDependencies": {
