@@ -1,8 +1,11 @@
 {
   "scripts": {
-  "dev": "tailwindcss -i src/static/tw/tailwind-input.css -o src/static/css/deshome-ui.css --watch"
-},
+    "dev": "tailwindcss -i src/static/tw/tailwind-input.css -o src/static/css/deshome-ui.css --watch"
+  },
   "devDependencies": {
     "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.5"
   }
 }
