@@ -4,4 +4,4 @@ def home_view(request):
     return render(request, "pages/home.html", {})
 
 def commerce_view(request):
-    return render(request, "pages/experimental.html", {})
+    return render(request, "pages/index.html", {})
