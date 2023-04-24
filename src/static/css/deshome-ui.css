@@ -1909,6 +1909,10 @@ input:checked + .toggle-bg {
     height: 2.25rem;
   }
 
+  .sm\:h-7 {
+    height: 1.75rem;
+  }
+
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
