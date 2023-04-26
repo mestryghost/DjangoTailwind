@@ -10,6 +10,6 @@ def home_page(request):
     return render(request, 'home.html', context)
 
 def event_page(request, pk):
-    event = Event.obects.get(id=pk)
+    event = Event.objects.get(id=pk)
     context = {'event' : event}
     return render(request, 'event.html', context)
