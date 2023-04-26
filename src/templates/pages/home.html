@@ -4,5 +4,15 @@
 <div class="bg-gradient-to-r from-sky-600 via-sky-400 to-sky-800 flex h-screen justify-center items-center text-white">
     <img class="w-10 h-10 rounded-full" src="media\destinnepic.jpg" alt="Rounded avatar">
     <h1 class="text-7xl">Niaje<h1>
+        <section>
+            <h2>Events</h2>
+            <div id="events---lists">
+                {% for event in events %}
+                    <div>
+                        {{event.name}}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
 </div>
 {% endblock %}
