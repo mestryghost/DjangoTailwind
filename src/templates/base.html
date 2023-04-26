@@ -9,17 +9,6 @@
         {% include 'head/css.html' %}   
     </head>
     <body>
-        <div>
-            <section>
-                <h1>Users</h1>
-                <div id="events---lists section">
-                    {% for user in users %}
-                        <div>
-                            {{user.name}}
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
             {% block content %}{% endblock %}
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
