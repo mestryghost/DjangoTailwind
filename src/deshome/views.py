@@ -12,3 +12,5 @@ def login_view(request):
 def signin_view(request):
     return render(request, "signin.html", {})
 
+def event_view(request):
+    return render(request, "event.html", {})
