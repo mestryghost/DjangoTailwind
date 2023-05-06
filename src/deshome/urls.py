@@ -20,13 +20,14 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home_view, name='home'),
-    path('song/', views.commerce_view, name='commerce'),
+     path('', views.home_view, name='home'),
     path('admin/', admin.site.urls),
     path('login/', views.login_view, name='login'),
     path('signin/', views.signin_view, name='signin'),
-    path('event/', views.event_view, name='event')
+    path('event/', views.event_view, name='event'),
+    path('aboutus/', views.aboutus_view, name='aboutus'),
 ]
+
 
 if settings.DEBUG:
     from django.conf.urls.static import static

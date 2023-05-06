@@ -14,3 +14,6 @@ def signin_view(request):
 
 def event_view(request):
     return render(request, "event.html", {})
+
+def aboutus_view(request):
+    return render(request, "aboutus.html", {})
