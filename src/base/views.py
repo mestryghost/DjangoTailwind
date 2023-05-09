@@ -6,7 +6,7 @@ from .models import User, Event, Submission
 def home_page(request):
     users = User.objects.filter(party=True)
     events = Event.objects.all()
-    context = {'users' : users}
+    context = {'users' : users, 'events': events}
     return render(request, 'home.html', context)
 
 def event_page(request, pk):
