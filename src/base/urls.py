@@ -4,7 +4,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.home_page, name="home"),
-    path('event/<str:pk>/', views.event_page, name="event")
+    path('event/<str:pk>/', views.event_page, name="event"),
+    path('eventauth/<str:pk>/', views.event_authenticate, name="eventauth"),
+    path('login/', views.login_page, name="login"),
+    path('signin/', views.signin_page, name="signin"),
+    path('aboutus/', views.aboutus_page, name="aboutus"),
 ]
 
 if settings.DEBUG:
