@@ -9,8 +9,8 @@ def home_page(request):
     context = {'users': users, 'event': events}
     return render(request, 'home.html', context)
 
-def event_page(request, pk):
-    events = Event.objects.get(id=pk)
+def event_page(request):
+    events = Event.objects.all()
     users = User.objects.filter(party=True)
     context = {'events' : events, 'users': users}
     return render(request, 'event.html', context)
@@ -21,7 +21,7 @@ def event_authenticate(request, pk):
 
     if request.method == "POST":
         events.participants.add(request.user)
-        return redirect('event', pk=events.id)
+        return redirect('events', pk=events.id)
 
     return render(request, 'eventauth.html', context)
 
