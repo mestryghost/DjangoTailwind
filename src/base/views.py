@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from django.shortcuts import render
-=======
 from django.shortcuts import render, redirect
->>>>>>> 3b3d3b382aff4fc0f01c50bcc88db5c983d6a460
 from .models import User, Event, Submission
 
 # Create your views here.
@@ -10,11 +6,7 @@ from .models import User, Event, Submission
 def home_page(request):
     users = User.objects.filter(party=True)
     events = Event.objects.all()
-<<<<<<< HEAD
     context = {'users': users, 'event': events}
-    return render(request, 'home.html', context)
-=======
-    context = {'users' : users, 'events': events}
     return render(request, 'home.html', context)
 
 def event_page(request, pk):
@@ -45,4 +37,3 @@ def signin_page(request):
 
 def aboutus_page(request):
     return render(request, "aboutus.html", {})
->>>>>>> 3b3d3b382aff4fc0f01c50bcc88db5c983d6a460

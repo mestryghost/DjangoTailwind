@@ -3,17 +3,12 @@ from . import views
 from django.conf import settings
 
 urlpatterns = [
-<<<<<<< HEAD
-    path('', views.home_page, name="home")
-    # path('event/<str:pk>/', views.home_page, name="event")
-=======
     path('', views.home_page, name="home"),
     path('event/<str:pk>/', views.event_page, name="event"),
     path('eventauth/<str:pk>/', views.event_authenticate, name="eventauth"),
     path('login/', views.login_page, name="login"),
     path('signin/', views.signin_page, name="signin"),
     path('aboutus/', views.aboutus_page, name="aboutus"),
->>>>>>> 3b3d3b382aff4fc0f01c50bcc88db5c983d6a460
 ]
 
 if settings.DEBUG:
